@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 {
     ui->setupUi(this);
+    // инициализация счетчика нажатий
     count=0;
 }
 
@@ -18,6 +19,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+    // при нажатии счетчик увеличивается и выводится
     count+=1;
     ui->label->setText(QString::number(count));
 }
